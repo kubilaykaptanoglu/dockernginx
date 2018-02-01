@@ -1,4 +1,5 @@
 Repostory'de bulunan tüm dosyaları /etc/docker altına kopyalayalım. # All files copy /etc/docker
+
 cp -R * /etc/docker/
 
 ######Reminding######
