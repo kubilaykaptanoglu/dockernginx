@@ -1,0 +1,9 @@
+FROM nginx:latest
+RUN rm -rf /var/www/html/*
+COPY web1 /usr/share/nginx/html
+COPY phpweb /etc/nginx/conf.d
+RUN apt-get update -y
+RUN apt-get install php-fpm -y
+RUN rm -rf /etc/php/7.0/fpm/pool.d/*
+COPY fpmconf /etc/php/7.0/fpm/pool.d
+ENTRYPOINT service php7.0-fpm start && service nginx start && bash
