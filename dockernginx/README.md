@@ -9,7 +9,7 @@ My local ip adress 192.168.203.130 Change ip address innginx conf file before bu
 
 #### Change file
 vi default_LBreserver/default.conf
-'''
+```
 server {
     listen       80;
     server_name  local2.com;
@@ -27,7 +27,7 @@ server {
 
 }
 }
-'''
+```
 ### Dockerfile'ları sırasıyla kopyalayıp build edeceğiz # Dockerfile one by one  copy  to build
 '''
 $ cp dockerfileLB dockerfile >> docker buid -t nginxlb:01 .
