@@ -6,7 +6,7 @@ $ cp -R * /etc/docker/
 ### Reminding
 
 > Benim local ip adresim 192.168.203.130 olduğu için nginx conf'larımda bu ip adresi yazmaktadır. Build etmeden önce kendinize göre değiştirebilirsiniz.
-My local ip adress 192.168.203.130 Change ip address innginx conf file before build
+My local ip adress 192.168.203.130 Change ip address in nginx conf file before build
 
 #### Change file
 vi default_LBreserver/default.conf
