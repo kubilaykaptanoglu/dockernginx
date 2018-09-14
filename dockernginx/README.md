@@ -32,9 +32,9 @@ server {
 ### Docker Build
 > Dockerfile'ları sırasıyla kopyalayıp build edeceğiz # Dockerfile one by one  copy  to build
 ```
- cp dockerfileLB dockerfile >> docker buid -t nginxlb:01 .
- cp dockerfileWEB1 dockerfile >> docker buid -t nginxweb1:01 .
- cp dockerfileWEB2 dockerfile >> docker buid -t nginxweb2:01 .
+ docker buid -f dockerfileLB -t nginxlb:01 .
+ docker buid -f dockerfileWEB1 -t nginxweb1:01 .
+ docker buid -f dockerfileWEB2 -t nginxweb2:01 .
 ```
 ### Docker run komutları # Docker run command
 ```
